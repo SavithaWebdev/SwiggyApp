@@ -1,0 +1,10 @@
+// const el = document.createElement("h1");
+// el.innerHTML = "hello savitha";
+// const p = document.getElementById("root");
+// p.append(el);
+import React from "react";
+import ReactDOM from "react-dom/client";
+const heading = React.createElement("h1", {}, "Hello James!");
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
+console.log(heading);
