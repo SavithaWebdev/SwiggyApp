@@ -1,10 +1,17 @@
-// const el = document.createElement("h1");
-// el.innerHTML = "hello savitha";
-// const p = document.getElementById("root");
-// p.append(el);
-import React from "react";
 import ReactDOM from "react-dom/client";
-const heading = React.createElement("h1", {}, "Hello James!");
+import React from "react";
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
+
+const AppLayout = () => {
+  return (
+    <div>
+      <h1>Hello Busy bee!!</h1>
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
-console.log(heading);
+root.render(<AppLayout />);
